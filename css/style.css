@@ -122,10 +122,13 @@ body {
 
 .header_menu {
 	margin: 0;
-	width: 70%;
 }
 
-.header_menu-item {display: inline-block;}
+.header_menu-item {
+	display: inline-block;
+    margin: 0 10px;
+    padding: 15px 10px;
+}
 
 .header_menu-item:after {
 	content: '';
@@ -148,6 +151,7 @@ body {
 	font-size: 1.6rem;
 	font-weight: normal;
 	color: #aeaeae;
+	display: block;
 }
 
 .header_menu-link:hover {
@@ -383,7 +387,59 @@ body {
 	margin: 10px 0 20px 0;
 }
 
-.footer_mapa-link,
+.contato_list li {margin-bottom: 25px;}
+
+.contato_fone {position: relative;}
+
+.contato_fone::before {
+	content: '';
+    width: 32px;
+    height: 32px;
+    background: url(../img/phone.png) 2px 8px no-repeat;
+    top: -5px;
+    left: -32px;
+    position: absolute;
+}
+
+.contato_email {position: relative;}
+
+.contato_email::before {
+	content: '';
+    width: 32px;
+    height: 32px;
+    background: url(../img/mail.png) 2px 9px no-repeat;
+    top: 9px;
+    left: -32px;
+    position: absolute;
+}
+
+.contato_email:nth-child(2) .contato_email-link {margin-bottom: 2px;}
+
+.contato_horario {position: relative;}
+
+.contato_horario::before {
+	content: '';
+    width: 32px;
+    height: 32px;
+    background: url(../img/clock.png) 2px 8px no-repeat;
+    top: -4px;
+    left: -32px;
+    position: absolute;
+}
+
+.contato_local {position: relative;}
+
+.contato_local::before {
+	content: '';
+    width: 32px;
+    height: 32px;
+    background: url(../img/pointer.png) 2px 6px no-repeat;
+    top: -5px;
+    left: -32px;
+    position: absolute;
+}
+
+.mapa_list-link,
 .contato_fone-txt,
 .contato_email-link,
 .contato_horario-txt,
@@ -397,7 +453,8 @@ body {
 	display: block;
 }
 
-.footer_mapa-link:hover {text-decoration: none;}
+.mapa_list-link:hover,
+.contato_email-link:hover { color: #ccc; text-decoration: none;}
 
 
 
@@ -422,6 +479,9 @@ body {
 		background: #fff;
 		margin-bottom: 30px;
 		border-bottom: 1px solid #6eb1c3;}
+	
+	.header_menu-item {width: 100%; margin: 5px 0; padding-left: 20px;}
+
 	
 	/* section_nv2*/
 	.section_nv2-txt {
@@ -449,6 +509,17 @@ body {
 		display: table;
 		margin: 0 auto;
 	}
+	
+	/* Footer */
+	.contato_list li {padding-left: 30px;}
+	
+	.footer_mapa,
+	.contato {margin-bottom: 45px;}
+	
+	.contato_fone::before,
+	.contato_email::before,
+	.contato_horario::before,
+	.contato_local::before {left: 0;}
 	
 }
 
@@ -528,7 +599,6 @@ body {
 	
 	.header_mobile .header_menu {margin-top: 25px; width: 100%;}
 	
-	.header_menu-item {width: 100%; margin: 5px 0; padding-left: 20px;}
 	
 
 
