@@ -281,7 +281,23 @@ body {
     width: 990px;
     height: 480px;
 	background: #fff;
-	padding-top: 25px;
+	padding-top: 30px;
+	padding-right: 25px
+}
+
+.modal-close {
+	position: absolute;
+    top: -20px;
+    right: -20px;
+    height: 40px;
+    width: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: url('../img/close-modal.png') center center #04c6f5 no-repeat;
+}
+
+.modal-close:hover {
+	opacity: .8;
 }
 
 
