@@ -258,6 +258,173 @@ body {
   padding: 0;
 }
 
+/* inicio da estilização dos modais */
+
+/* primeiro modal - video */
+.modal_video {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(111,177,195,.7);
+    z-index: 9999;
+	display: none;
+}
+
+.modal_video-box {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-top: -240px;
+    margin-left: -495px;
+    width: 990px;
+    height: 480px;
+	background: #fff;
+	padding-top: 25px;
+}
+
+
+.modal_box-tit {
+	margin: 0 0 40px 0;
+}
+
+.modal_box-tit,
+.modal_box-destaque {
+	font-family: 'Poppins', sans-serif;
+	font-size: 4rem;
+	font-weight: normal;
+	color: #aeaeae;
+}
+
+.modal_box-tit,
+.modal_box-txt {
+	font-weight: normal;
+	color: #aeaeae;
+}
+
+.modal_box-destaque {
+	font-weight: 700;
+	color: #6eb1c3;
+}
+
+.modal_box-txt {
+	font-family: 'Hind', sans-serif;
+	font-size: 1.6rem;
+	position: relative;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.modal_box-txt::before {
+	content: '';
+	width: 100px;
+	height: 10px;
+	background: #6eb1c3;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+}
+
+.video_box {
+	position: relative;
+}
+
+.video_box::before,
+.video_box::after {
+	content: '';
+	position: absolute;
+}
+
+.video_box::before {
+	width: 41px;
+	height: 40px;
+	background: url(../img/seta-1.png);
+	bottom: -20px;
+	left: -20px;
+}
+
+.video_box::after {
+	width: 25px;
+	height: 25px;
+	background: url(../img/seta-2.png);
+	right: -12px;
+	top: -12px;
+}
+
+.video_home {
+	height: 418px;
+    width: 100%;
+}
+
+/* segundo modal - formulario e-commerce */
+
+.modal_ebook {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(111,177,195,.7);
+    z-index: 9999;
+	display: none;
+}
+
+.modal_ebook-box {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-top: -240px;
+    margin-left: -495px;
+    width: 990px;
+    height: 480px;
+	background: #fff;
+	padding-top: 25px;
+	padding-right: 25px;
+}
+
+.form_box {align-items: center;}
+
+.mude_img {padding: 30px;}
+
+.form_tit { margin: 30px 0;}
+
+.form_tit,
+.form_tit-destaque {
+	font-family: 'Poppins', sans-serif;
+	font-size: 3.5rem;
+	color: #8c8c8c;
+	font-weight: normal;
+}
+
+.form_tit-destaque {font-weight: 700;}
+
+.nome,
+.email {
+	width: 100%;
+	border-bottom: 5px solid #aeaeae;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6rem;
+	color: #aeaeae;
+	margin-bottom: 30px;
+}
+
+.btn_form {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	padding: 10px 40px;
+	border-radius: 22px;
+	background: #4e96a9;
+	color: #fff;
+	border: 1px solid #4e96a9;
+}
+
+.btn_form:focus,
+.btn_form:hover {
+	background: #fff;
+	color: #4e96a9;
+}
+
 /* section_nv3*/
 .section_nv3{
 	padding: 55px 0 60px;
@@ -399,6 +566,7 @@ body {
 	text-align: left;
 	margin-bottom: 15px;
 	display: block;
+	cursor: pointer;
 }
 
 .mapa_list-link:hover,
@@ -414,6 +582,30 @@ body {
 /*---------------------------------------
 /-------------Institucional--------------
 /---------------------------------------*/
+
+/* cabeçalho - institucional */
+
+.header_pages {
+	padding: 10px 0;
+	margin-bottom: 40px;
+	border-bottom: 2px solid #6eb1c3;
+}
+
+.header_pages_menu-link {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	font-weight: normal;
+	color: #aeaeae;
+}
+
+.header_pages_menu-link:hover,
+.header_pages_menu-link:focus {
+	color: #ccc;
+	text-decoration: none;
+}
+
+/* fim da estilização do header da page institucional */
+
 .infos_box{
   background: #0088a3;
   color: white;
