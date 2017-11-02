@@ -346,28 +346,6 @@ body {
 	position: relative;
 }
 
-.video_box::before,
-.video_box::after {
-	content: '';
-	position: absolute;
-}
-
-.video_box::before {
-	width: 41px;
-	height: 40px;
-	background: url(../img/seta-1.png);
-	bottom: -20px;
-	left: -20px;
-}
-
-.video_box::after {
-	width: 25px;
-	height: 25px;
-	background: url(../img/seta-2.png);
-	right: -12px;
-	top: -12px;
-}
-
 .video_home {
 	height: 418px;
     width: 100%;
@@ -396,29 +374,31 @@ body {
     height: 480px;
 	background: #fff;
 	padding-top: 25px;
-	padding-right: 25px;
 }
 
 .form_box {align-items: center;}
 
-.mude_img {padding: 30px;}
+.form_box figure {padding: 0 30px;}
 
+.mude_img {padding: 60px 30px 0 30px;}
+
+
+.form_ebook {padding: 0 30px;}
 .form_tit { margin: 30px 0;}
 
 .form_tit,
 .form_tit-destaque {
 	font-family: 'Poppins', sans-serif;
-	font-size: 3.5rem;
+	font-size: 2.4rem;
 	color: #8c8c8c;
 	font-weight: normal;
+	text-transform: uppercase;
 }
-
-.form_tit-destaque {font-weight: 700;}
 
 .nome,
 .email {
 	width: 100%;
-	border-bottom: 5px solid #aeaeae;
+	border-bottom: 2px solid #aeaeae;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 	color: #aeaeae;
@@ -426,13 +406,18 @@ body {
 }
 
 .btn_form {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5rem;
-	padding: 10px 40px;
-	border-radius: 22px;
-	background: #4e96a9;
-	color: #fff;
-	border: 1px solid #4e96a9;
+	width: 200px;
+    height: 50px;
+    border: 2px solid #4e96a9;
+	display: block;
+    line-height: 52px;
+    background: #4e96a9;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'Hind', sans-serif;
+    text-transform: uppercase;
 }
 
 .btn_form:focus,
@@ -604,7 +589,8 @@ body {
 .header_pages {
 	padding: 10px 0;
 	margin-bottom: 40px;
-	border-bottom: 2px solid #6eb1c3;
+	background: url('../img/bg-cbc.png')no-repeat;
+	background-size: cover;
 }
 
 .header_pages_menu-link {
@@ -622,8 +608,24 @@ body {
 
 /* fim da estilização do header da page institucional */
 
+.section_institucional-txt {
+	font-family: 'Hind', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    position: relative;
+    margin: 0;
+}
+
+.section_institucional-txt p {
+	margin-bottom: 30px;
+    padding: 0;
+    color: #808080;
+    text-align: justify;
+	font-family: 'Hind', sans-serif;
+}
+
 .infos_box{
-  background: #0088a3;
+  background: #6fb1c3;
   color: white;
   padding: 20px 30px 40px;
 }
@@ -688,6 +690,21 @@ body {
 	font-weight: normal;
 	font-size: 1.4rem;
   text-align: center;
+}
+
+.diferenciais {
+	background: #6fb1c3;
+	padding: 50px 0;
+}
+
+.diferenciais_tit {
+	font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
 }
 
 

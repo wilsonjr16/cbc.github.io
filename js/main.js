@@ -21,15 +21,51 @@ limit:6,
 resolution:"low_resolution"});
 e.run();
 
-jQuery("#owl-painel").owlCarousel({
-  dots: false,
-  nav: true,
-  items : 1,
-  autoplay: true,
-  loop: true,
-  lazyLoad:true,
-  responsiveClass: true
-});
+//jQuery("#owl-painel").owlCarousel({
+//  dots: false,
+//  nav: true,
+//  items : 1,
+//  autoplay: true,
+//  loop: true,
+//  lazyLoad:true,
+//  responsiveClass: true
+//});
   
                        
+});
+
+
+function open_modal() {
+    jQuery('.btn_modal-video').click(function(){
+
+		jQuery('.modal_video').show();
+		
+		jQuery('.video_box').append('<iframe class="video_home" id="video" src="https://www.youtube.com/embed/CxTPXJc17Pg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+
+	});
+	
+	jQuery('.modal-close, .modal_video').click(function(){
+
+			jQuery('.modal_video').hide();
+			
+			jQuery('#video').detach();
+
+	});
+	
+	jQuery('.btn_modal-ebook').click(function(){
+
+		jQuery('.modal_ebook').show();
+		
+	});
+	
+	jQuery('.modal-close').click(function(){
+
+			jQuery('.modal_ebook').hide();
+
+
+	});
+}
+
+jQuery( document ).ready(function() {
+    open_modal();
 });
