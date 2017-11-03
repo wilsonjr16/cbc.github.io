@@ -21,15 +21,15 @@ limit:6,
 resolution:"low_resolution"});
 e.run();
 
-//jQuery("#owl-painel").owlCarousel({
-//  dots: false,
-//  nav: true,
-//  items : 1,
-//  autoplay: true,
-//  loop: true,
-//  lazyLoad:true,
-//  responsiveClass: true
-//});
+jQuery("#owl-painel").owlCarousel({
+  dots: false,
+  nav: true,
+  items : 1,
+  autoplay: true,
+  loop: true,
+  lazyLoad:true,
+  responsiveClass: true
+});
   
                        
 });
