@@ -128,20 +128,11 @@ body {
 .header_menu-item {
   display: inline-block;
   margin: 0 10px;
+  position: relative;
 }
 
-.header_menu-item::after {
-  content: '';
-  height: 2px;
-  width: 0;
-  display: table;
-  margin: 0 auto;
-  background: #49747F;
-}
-
-.header_menu-item:hover::after {
-  width: 100%;
-  transition: width .8s ease-in;
+.header_menu-item:hover {
+  background: #3db3c5;
 }
 
 .header_menu-link,
@@ -155,14 +146,32 @@ body {
   padding: 10px;
 }
 
-.header_menu-link:hover {
+.header_menu-link:hover,
+.submenu-link:hover {
   text-decoration: none;
-  color: #49747F;
+  color: white;
 }
 
+.header_menu-item:hover .submenu{ display: block; }
 .submenu {
   display: none;
+  background: #53cbdb;
+  position: absolute;
+  top: 42px;
+  z-index: 1;
+  width: 250px;
+  padding: 0;
 }
+.submenu-link{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 20px;
+}
+.submenu-link:hover{ background: #3db3c5 }
 
 /* SECTION_NV2 */
 .section_nv2 {
@@ -349,7 +358,9 @@ body {
 .video_home {
 	height: 418px;
     width: 100%;
+    display: none;
 }
+.video_home:first-child{ display: block; }
 
 /* segundo modal - formulario e-commerce */
 
@@ -473,6 +484,17 @@ body {
 .section_nv4 {
 	background: #6fb1c3;
 	padding: 50px 0; 
+}
+
+.section_nv4-tit{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.6rem;
+    font-weight: normal;
+    color: #f3f3f3;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 70px;
 }
 
 .insta_tit {
@@ -712,6 +734,22 @@ body {
 /--------------Consultoria---------------
 /---------------------------------------*/
 .video_consultoria{ width: 100%; height: 250px;}
+
+.dep_text strong{
+  display: block;
+  margin: 20px 0 10px;
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  font-family: 'Hind', sans-serif;
+}
+.dep_text p{
+  color: white;
+  font-weight: 300;
+  font-size: 1.2em;
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+}
 
 
 /*---------------------------------------
