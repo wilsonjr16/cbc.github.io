@@ -507,7 +507,8 @@ body {
   text-transform: uppercase;
   margin: 0 0 70px;
 }
-#instafeed .insta_item{ max-height: 140px; overflow: hidden; padding: 0 10px; margin-bottom: 20px;}
+#instafeed .insta_item{ max-height: 140px; overflow: hidden; padding: 0 10px; margin-bottom: 20px;display: block; }
+#instafeed .insta_item:nth-child(1n+7){ display: none; }
 
 /* footer */
 .footer {
@@ -525,7 +526,7 @@ body {
 	margin: 10px 0 20px 0;
 }
 
-.contato_list li {margin-bottom: 25px;}
+.contato_list li {margin-bottom: 25px; padding-left: 32px;}
 
 .contato_fone {position: relative;}
 
@@ -535,7 +536,7 @@ body {
     height: 32px;
     background: url(../img/phone.png) 2px 8px no-repeat;
     top: -5px;
-    left: -32px;
+    left: 0;
     position: absolute;
 }
 
@@ -547,7 +548,7 @@ body {
     height: 32px;
     background: url(../img/mail.png) 2px 9px no-repeat;
     top: 9px;
-    left: -32px;
+    left: 0;
     position: absolute;
 }
 
@@ -561,7 +562,7 @@ body {
     height: 32px;
     background: url(../img/clock.png) 2px 8px no-repeat;
     top: -4px;
-    left: -32px;
+    left: 0;
     position: absolute;
 }
 
@@ -573,7 +574,7 @@ body {
     height: 32px;
     background: url(../img/pointer.png) 2px 6px no-repeat;
     top: -5px;
-    left: -32px;
+    left: 0;
     position: absolute;
 }
 
@@ -630,6 +631,7 @@ body {
 
 /* fim da estilização do header da page institucional */
 
+.padd-top{ padding-top: 60px;}
 .section_institucional-txt {
 	font-family: 'Hind', sans-serif;
     font-size: 1.6rem;
