@@ -607,6 +607,12 @@ body {
 /-------------Institucional--------------
 /---------------------------------------*/
 
+
+/*--------------------------------------------------------------
+/---------------alterações no carrossel da página---------------
+/-------------------------------------------------------------*/
+
+
 #owl-painel .owl-prev,
 #owl-painel .owl-next {
  width: 40px;
@@ -619,12 +625,6 @@ body {
 
 #owl-painel .owl-prev{ background: url('../img/seta-esquerda.png') no-repeat center; left: 0;}
 #owl-painel .owl-next { background: url('../img/seta-direita.png') no-repeat center; right: 0; }
-
-/*--------------------------------------------------------------
-/---------------alterações no carrossel da página---------------
-/-------------------------------------------------------------*/
-
-
 
 
 
@@ -896,6 +896,30 @@ body {
 	margin: 15px 0;
 }
 
+/*---------------------------------------
+/-----------------MUDE-------------------
+/---------------------------------------*/
+
+.interesse div {
+	padding: 40px 20px;
+	border: 4px solid #0088a3;
+}
+
+.interesse .interesse_link {
+	float: inherit;
+	margin: 0 auto;
+}
+
+.interesse_tit {
+	color: #0088a3;
+    font-family: 'Poppins', sans-serif;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.interesse_link:hover  {
+	text-decoration: none;
+}
 
 
 /*---------------------------------------
@@ -911,7 +935,8 @@ body {
 
 
 	/* header */
-	.header {display: none;}
+	.header,
+	.header_pages {display: none;}
 
 	.header_mobile {
 		display: block;
@@ -920,6 +945,19 @@ body {
 	}
 
 	.header_menu-item {width: 100%; margin: 5px 0; padding-left: 20px;}
+	.header_menu-item:hover .header_menu-link {color: #fff;}
+	
+	.header_menu-link,
+	.header_menu-link:visited,
+	.header_menu-link:focus { 
+		color: #6eb1c3;
+		
+		transition: all .6s ease-in-out;
+		-webkit-transition: all .6s ease-in-out;
+		-moz-transition: all .6s ease-in-out;
+		-ms-transition: all .6s ease-in-out;
+		-o-transition: all .6s ease-in-out;
+	}
 
 
 	/* section_nv2*/
@@ -943,7 +981,8 @@ body {
 		right: 4px;
 	}
 	
-	.modal_video-box {
+	.modal_video-box,
+	.modal_ebook-box {
 		width: 100%;
 		height: 100vh;
 		top: 0;
@@ -953,6 +992,7 @@ body {
 		padding-right: 0;
 		padding-top: 40px;
 	}
+	
 
 	/* Section_nv3*/
 	.servicos_list-link { margin: 30px auto;}
@@ -986,6 +1026,22 @@ body {
 	.contato_email::before,
 	.contato_horario::before,
 	.contato_local::before {left: 0;}
+	
+	/* INSTITUCIONAL */
+	
+	.dif_list-item {
+		margin-bottom: 20px;
+		height: 307px;
+	}
+	
+	/* METODO MUDE */
+	.infos_box {margin: 15px 0;}
+	.list_tit,
+	.interesse_tit {margin: 20px 0;}
+	
+	.interesse {padding: 50px 15px;}
+	.interesse div {border: 4px solid #0088a3; padding: 20px 0;}
+	.interesse_tit {text-align: center;}
 
 }
 
@@ -1061,7 +1117,7 @@ body {
 .borda-divisao {
 	width: 100%;
 	height: 1px;
-	background: #003065;
+	background: #6eb1c3;
 }
 
 .header_mobile .header_menu {margin-top: 25px; width: 100%;}
