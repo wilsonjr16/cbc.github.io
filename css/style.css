@@ -917,8 +917,7 @@ body {
 		display: block;
 		position: relative;
 		background: #fff;
-		margin-bottom: 30px;
-		border-bottom: 1px solid #6eb1c3;}
+	}
 
 	.header_menu-item {width: 100%; margin: 5px 0; padding-left: 20px;}
 
@@ -926,6 +925,33 @@ body {
 	/* section_nv2*/
 	.section_nv2-txt {
 		margin-bottom: 40px;
+	}
+	
+	.box_middle{width: 100%;}
+	.section_nv2-tit {
+		width: 100%;
+		word-break: break-word;
+		font-size: 3rem;
+	}
+	
+	#modal1 {margin-bottom: 50px;}
+	
+	.bts_modal li {float: inherit;}
+	
+	.modal-close {
+		top: 4px;
+		right: 4px;
+	}
+	
+	.modal_video-box {
+		width: 100%;
+		height: 100vh;
+		top: 0;
+		margin-top: 0;
+		left: 0;
+		margin-left: 0;
+		padding-right: 0;
+		padding-top: 40px;
 	}
 
 	/* Section_nv3*/
