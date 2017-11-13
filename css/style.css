@@ -105,7 +105,13 @@ body {
 }
 
 .header_mobile {display: none;}
-.logo_cbc{ margin: 15px 0;}
+.logo_cbc{ 
+  margin: 0 0 10px;
+  padding: 10px 5px 10px;
+  background: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 .header_nav,
 .header_menu {
@@ -634,7 +640,7 @@ body {
 /* cabeçalho - institucional */
 
 .header_pages {
-	padding: 10px 0;
+	padding: 0;
 	margin-bottom: 40px;
 	background: url('../img/bg-cbc.png')no-repeat;
 	background-size: cover;
@@ -687,6 +693,7 @@ body {
 .list_tit{
   color: #0088a3;
   font-family: 'Poppins', sans-serif;
+  margin-top: 0;
 }
 .list_item{
   display: block;
