@@ -942,22 +942,25 @@ body {
 		display: block;
 		position: relative;
 		background: #fff;
+		border-bottom: 3px solid #6eb1c3;
 	}
 
 	.header_menu-item {width: 100%; margin: 5px 0; padding-left: 20px;}
-	.header_menu-item:hover .header_menu-link {color: #fff;}
+	.header_menu-item:hover .header_menu-link {color: #fff; text-decoration: none;}
 	
 	.header_menu-link,
-	.header_menu-link:visited,
-	.header_menu-link:focus { 
+	.header_menu-link:visited { 
 		color: #6eb1c3;
 		
-		transition: all .6s ease-in-out;
-		-webkit-transition: all .6s ease-in-out;
-		-moz-transition: all .6s ease-in-out;
-		-ms-transition: all .6s ease-in-out;
-		-o-transition: all .6s ease-in-out;
+		transition: all .3s ease-in-out;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
 	}
+	
+	.header_menu-link:hover,
+	.header_menu-link:focus {color: #fff;}
 
 
 	/* section_nv2*/
@@ -1042,6 +1045,10 @@ body {
 	.interesse {padding: 50px 15px;}
 	.interesse div {border: 4px solid #0088a3; padding: 20px 0;}
 	.interesse_tit {text-align: center;}
+	
+	/* CONTATO */
+	
+	#contato {width: 100%; margin-bottom: 30px;}
 
 }
 
@@ -1116,7 +1123,7 @@ body {
 
 .borda-divisao {
 	width: 100%;
-	height: 1px;
+	height: 3px;
 	background: #6eb1c3;
 }
 
