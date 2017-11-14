@@ -940,6 +940,7 @@ body {
       position: relative;
 	}
 
+	.hideMobile{ height:100vh; overflow:hidden;}
 
 	/* header */
 	.header,
@@ -982,7 +983,7 @@ body {
 		font-size: 3rem;
 	}
 	
-	#modal1 {margin-bottom: 50px;}
+	#modal1 {margin-bottom: 20px;}
 	
 	.bts_modal li {float: inherit;}
 	
@@ -1001,10 +1002,15 @@ body {
 		margin-left: 0;
 		padding-right: 0;
 		padding-top: 40px;
+		overflow: scroll;
 	}
+	
+	.modal_box-video{margin-bottom: 20px;}
 	
 
 	/* Section_nv3*/
+	.section_nv3-tit {margin: 20px 0 50px 0;s}
+	
 	.servicos_list-link { margin: 30px auto;}
 
 	/* Section_nv4*/
@@ -1039,6 +1045,8 @@ body {
 	
 	/* INSTITUCIONAL */
 	
+	#historia {margin-top: 20px;}
+	
 	.dif_list-item {
 		margin-bottom: 20px;
 		height: 307px;
@@ -1056,6 +1064,14 @@ body {
 	/* CONTATO */
 	
 	#contato {width: 100%; margin-bottom: 30px;}
+	
+	/* CLIENTES */
+	
+	.section_clientes {
+    	padding: 20px 0;
+	}
+	
+	.page_clientes-tit {margin: 0 0 20px 0;}
 
 }
 

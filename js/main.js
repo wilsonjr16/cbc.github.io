@@ -34,10 +34,9 @@ jQuery(document).ready( function(){
                        
 });
 
-
 function open_modal() {
     jQuery('.btn_modal-video').click(function(){
-
+        jQuery('body').addClass('hideMobile');
 		jQuery('.modal_video').show();
 		
 		jQuery('.video_box').append('<iframe class="video_home" id="video" src="https://www.youtube.com/embed/CxTPXJc17Pg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
@@ -45,7 +44,7 @@ function open_modal() {
 	});
 	
 	jQuery('.modal-close, .modal_video').click(function(){
-
+            jQuery('body').removeClass('hideMobile');
 			jQuery('.modal_video').hide();
 			
 			jQuery('#video').detach();
@@ -53,13 +52,13 @@ function open_modal() {
 	});
 	
 	jQuery('.btn_modal-ebook').click(function(){
-
+        jQuery('body').addClass('hideMobile');
 		jQuery('.modal_ebook').show();
 		
 	});
 	
 	jQuery('.modal-close').click(function(){
-
+            jQuery('body').removeClass('hideMobile');
 			jQuery('.modal_ebook').hide();
 
 
