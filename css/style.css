@@ -14,7 +14,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.center-block{ margin-left: auto;; margin-right: auto;}
+.center-block{ margin-left: auto; margin-right: auto;}
 
 .cem {width: 100%;}
 
@@ -612,7 +612,7 @@ body {
 }
 
 .mapa_list-link:hover,
-.contato_email-link:hover { color: #ccc; text-decoration: none;}
+.contato_email-link:hover { color: #6fb1c3; text-decoration: none;}
 
 /*---------------------------------------
 /----------------Internas----------------
