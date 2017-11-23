@@ -106,11 +106,9 @@ body {
 
 .header_mobile {display: none;}
 .logo_cbc{ 
-  margin: 0 0 10px;
+  margin: 10px 0 10px;
   padding: 10px 5px 10px;
   background: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .header_nav,
@@ -144,12 +142,13 @@ body {
 .header_menu-link,
 .header_menu-link:visited,
 .header_menu-link:focus{
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-  font-weight: normal;
-  color: white;
-  display: block;
-  padding: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+	font-weight: normal;
+	color: white;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
 }
 
 .header_menu-link:hover,
@@ -504,15 +503,28 @@ body {
 }
 
 .insta_tit {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.6rem;
-  font-weight: normal;
-  color: #f3f3f3;
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 0 70px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.6rem;
+	font-weight: normal;
+	color: #f3f3f3;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	display: table;
+	margin: 0 auto 70px;
+	position: relative;
 }
+
+.insta_tit::before {
+	content: '';
+	width: 32px;
+	height: 32px;
+	background: url('../img/instagram-cbc.png') center center;
+	position: absolute;
+	top: -2px;
+	left: -41px;
+}
+
 #instafeed .insta_item{ max-height: 140px; overflow: hidden; padding: 0 10px; margin-bottom: 20px;display: block; }
 #instafeed .insta_item:nth-child(1n+7){ display: none; }
 
@@ -553,7 +565,7 @@ body {
     width: 32px;
     height: 32px;
     background: url(../img/mail.png) 2px 9px no-repeat;
-    top: 9px;
+    top: -4px;
     left: 0;
     position: absolute;
 }
@@ -567,7 +579,7 @@ body {
     width: 32px;
     height: 32px;
     background: url(../img/clock.png) 2px 8px no-repeat;
-    top: -4px;
+    top: -5px;
     left: 0;
     position: absolute;
 }
