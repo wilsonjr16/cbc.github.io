@@ -558,6 +558,18 @@ body {
     position: absolute;
 }
 
+.contato_whats {position: relative;}
+
+.contato_whats::before {
+	content: '';
+    width: 32px;
+    height: 32px;
+    background: url(../img/whatsapp.png) 2px 8px no-repeat;
+    top: -6px;
+    left: 0;
+    position: absolute;
+}
+
 .contato_email {position: relative;}
 
 .contato_email::before {
