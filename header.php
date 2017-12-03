@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" itemscope itemtype="http://schema.org/LocalBusiness">
 <head>
-    <title><?php print $cabecalho_title; ?></title>
+    <title itemprop="name"><?php print $cabecalho_title; ?></title>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -25,6 +25,8 @@
     <meta property="og:title" content="<?php print $og_title; ?>" />
     <meta property="og:description" content="Acreditamos que para planejar e pensar estrategicamente é necessário um trabalho que harmonize persistência, tempo para desenvolvimento do seu estilo estratégico e capacidade inspiradora. Se você está disposto a desafiar o seu modelo mental sabendo que rotas novas em mapas antigos pouco podem agregar o convidamos para fazer parte do nosso ciclo de clientes e parceiros." />
     <meta property="og:image" content="http://www.consultoriacbc.com.br/img/facebook_cover.png" />
+    
+    <meta itemprop="image" content="http://www.consultoriacbc.com.br/img/facebook_cover.png" />
 
 </head>
 
