@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
     <title><?php print $cabecalho_title; ?></title>
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400|Poppins" rel="stylesheet">
