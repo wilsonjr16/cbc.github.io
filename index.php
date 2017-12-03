@@ -54,14 +54,14 @@
             <div class="col-sm-6 col-xs-12 form_ebook">
                 <form id="ebook" class="ebook">
                     <h3 class="form_tit">Inscreva-se e receba <strong class="form_tit-destaque">nosso ebook</strong></h3>
-                    <input type="text" class="nome" name="nome" id="nome" placeholder="Seu nome" required="required">
-                    <input type="email" class="email" name="email" id="nome" placeholder="Seu email" required="required">
+                    <input type="text" class="nome" name="nome" id="nome_ebook" placeholder="Seu nome" required="required">
+                    <input type="email" class="email" name="email" id="email_ebook" placeholder="Seu email" required="required">
                     <input type="submit" class="btn_form fright submit" value="ENVIAR">
                 </form>
                 
                 <div class="ebook_download">
                   <h3 class="ebook_title">Baixe gratuitamente o nosso E-book Oficial!</h3>
-                  <a href="http://www.consultoriacbc.com.br/ebook_oficial.pdf" target="_blank" class="ebook_bt" title="Download do E-book Oficial">Download</a>
+                  <a href="http://www.consultoriacbc.com.br/ebook_oficial.pdf" download="ebook_oficial.pdf" target="_blank" class="ebook_bt" title="Download do E-book Oficial">Download</a>
                 </div>
             </div>
         </div>

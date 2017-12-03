@@ -151,8 +151,8 @@ jQuery('.enviar').click(function(){
 
 jQuery('.submit').click(function(){
 
-    var name    = $('#inputName');
-    var mail    = $('#inputEmail');
+    var name    = $('#nome_ebook');
+    var mail    = $('#email_ebook');
 
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
@@ -182,7 +182,7 @@ jQuery('.submit').click(function(){
     call_ajax_withCallback('./mail-ebook.php', {'User' : User}, function(data){
 
         if( data.indexOf('sucesso') > -1 ){
-          alert('Parabéns! Seu e-mail foi enviado com sucesso.'); 
+          alert('Parabéns! Seu e-mail foi adicionado com sucesso.'); 
           name.val('');
           mail.val('');
           jQuery('.ebook_download').show();
