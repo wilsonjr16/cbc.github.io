@@ -60,7 +60,7 @@
                 </form>
                 
                 <div class="ebook_download">
-                  <h3 class="ebook_title">Baixe gratuitamente o nosso E-book Oficial!</h3>
+                  <h3 class="ebook_title">Baixe gratuitamente o nosso Ebook Oficial!</h3>
                   <a href="http://www.consultoriacbc.com.br/ebook_oficial.pdf" download="ebook_oficial.pdf" target="_blank" class="ebook_bt" title="Download do E-book Oficial">Download</a>
                 </div>
             </div>

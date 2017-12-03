@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 	
 	if (isset( $_POST["User"] )) {
 
@@ -15,8 +15,8 @@
 			
 		$msg = "Nome: ".$name."\n"."E-mail: ".$mail;
 
-		$enviar = mail("isabela.wdev@gmail.com","Assunto: Dados para download do e-book | Site consultoriacbc.com.br",$msg, $headers);
-        $enviarEmailAlternativo = mail("isabelatsilveira@gmail.com","Assunto: Dados para download do e-book | Site consultoriacbc.com.br",$msg, $headers);
+		$enviar = mail("juniorcosta@consultoriacbc.com.br","Assunto: Dados para download do e-book | Site consultoriacbc.com.br",$msg, $headers);
+        $enviarEmailAlternativo = mail("comercial@consultoriacbc.com.br","Assunto: Dados para download do e-book | Site consultoriacbc.com.br",$msg, $headers);
 
 		echo "sucesso";
 
