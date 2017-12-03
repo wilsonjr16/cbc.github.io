@@ -12,15 +12,16 @@ jQuery(document).ready( function(){
       jQuery('body').removeClass('scroll-hidden');
   });
 
- var e=new Instafeed({
-  template:'<li class="col-sm-2 insta_item"><a href="{{link}}" title="Instagram" class="insta-link"><img src="{{image}}" class="img-responsive center-block"></a></li>',
-  get:"user",
-  userId:3281923690,
-  accessToken:"3281923690.7c61f5a.cec3aaea1a054ffda79af80434bd5963",
-  limit:6,
-  resolution:"low_resolution"});
-  e.run();
-
+  if(jQuery(".page-home").length>0 || jQuery(".page-clientes").length>0){
+   var e=new Instafeed({
+    template:'<li class="col-sm-2 col-xs-6 insta_item"><a href="{{link}}" title="Instagram" class="insta-link"><img src="{{image}}" class="img-responsive center-block"></a></li>',
+    get:"user",
+    userId:3281923690,
+    accessToken:"3281923690.7c61f5a.cec3aaea1a054ffda79af80434bd5963",
+    limit:6,
+    resolution:"low_resolution"});
+    e.run();
+  }
   jQuery("#owl-painel").owlCarousel({
     dots: false,
     nav: true,
@@ -66,5 +67,134 @@ function open_modal() {
 }
 
 jQuery( document ).ready(function() {
-    open_modal();
+  open_modal();
+  jQuery('.ebook_download').hide();
+});
+
+
+function call_ajax_withCallback(_url, _data, callback){
+
+  jQuery.ajax({
+      type: "POST",
+      url: _url,
+      data: _data,
+      async: true,
+      success: callback,
+    error: callback
+  });
+
+} /* call_ajax_withCallback */
+
+
+jQuery('.enviar').click(function(){
+
+    var name    = $('#inputName');
+    var mail    = $('#inputEmail');
+    var tel    = $('#inputTel');
+    var msg     = $('#inputMensagem');
+
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+    if( $.trim( name.val() ) == "" ){
+
+        name.addClass('error');
+        $('.error_text').text('preencha seu nome').slideDown();        
+
+        return false;
+
+    }
+
+    if ( !emailReg.test( $.trim( mail.val() ) ) || $.trim( mail.val() ) == "" ){
+
+        mail.addClass('error');
+        $('.error_text').text('preencha seu email corretamente').slideDown();        
+
+        return false;
+
+    }
+
+    if( $.trim( msg.val() ) == "" ){
+
+        msg.addClass('error');
+        $('.error_text').text('preencha sua mensagem').slideDown();        
+
+        return false;
+
+    }
+
+
+    var User = {};
+
+    User.name    = name.val();
+    User.mail    = mail.val();
+    User.tel    = tel.val();
+    User.mensage = msg.val();
+
+    call_ajax_withCallback('./mail.php', {'User' : User}, function(data){
+
+        if( data.indexOf('sucesso') > -1 ){
+          alert('Parabéns! Seu e-mail foi enviado com sucesso.'); 
+          name.val('');
+          mail.val('');
+          tel.val('');
+          msg.val('');
+        }else {
+          alert('Houve um problema com o envio. Tente novamente mais tarde.');  
+        }
+
+    });
+
+
+    return false;
+
+});
+
+jQuery('.submit').click(function(){
+
+    var name    = $('#inputName');
+    var mail    = $('#inputEmail');
+
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+    if( $.trim( name.val() ) == "" ){
+
+        name.addClass('error');
+        $('.error_text').text('preencha seu nome').slideDown();        
+
+        return false;
+
+    }
+
+    if ( !emailReg.test( $.trim( mail.val() ) ) || $.trim( mail.val() ) == "" ){
+
+        mail.addClass('error');
+        $('.error_text').text('preencha seu email corretamente').slideDown();        
+
+        return false;
+
+    }
+
+    var User = {};
+
+    User.name    = name.val();
+    User.mail    = mail.val();
+
+    call_ajax_withCallback('./mail-ebook.php', {'User' : User}, function(data){
+
+        if( data.indexOf('sucesso') > -1 ){
+          alert('Parabéns! Seu e-mail foi enviado com sucesso.'); 
+          name.val('');
+          mail.val('');
+          jQuery('.ebook_download').show();
+          
+        }else {
+          alert('Houve um problema com o envio. Tente novamente mais tarde.');  
+          jQuery('.ebook_download').hide();
+        }
+
+    });
+
+
+    return false;
+
 });
