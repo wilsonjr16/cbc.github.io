@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br" itemscope itemtype="http://schema.org/LocalBusiness">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110586698-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110586698-1');
+    </script>
+
     <title itemprop="name"><?php print $cabecalho_title; ?></title>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,6 +21,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#6fb1c3" />
+    
+     <meta property="og:url" content="www.consultoriacbc.com.br" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<?php print $og_title; ?>" />
+    <meta property="og:description" content="Acreditamos que para planejar e pensar estrategicamente é necessário um trabalho que harmonize persistência, tempo para desenvolvimento do seu estilo estratégico e capacidade inspiradora. Se você está disposto a desafiar o seu modelo mental sabendo que rotas novas em mapas antigos pouco podem agregar o convidamos para fazer parte do nosso ciclo de clientes e parceiros." />
+    <meta property="og:image" content="http://www.consultoriacbc.com.br/img/facebook_cover.png" />
+    
+    <meta name="description" content="Acreditamos que para planejar e pensar estrategicamente é necessário um trabalho que harmonize persistência, tempo para desenvolvimento do seu estilo estratégico e capacidade inspiradora. Se você está disposto a desafiar o seu modelo mental sabendo que rotas novas em mapas antigos pouco podem agregar o convidamos para fazer parte do nosso ciclo de clientes e parceiros." />
+    <meta itemprop="image" content="http://www.consultoriacbc.com.br/img/facebook_cover.png" />
+    
 
     <!-- favicon -->
     <link rel="icon" href="img/favicon/favicon.png" />
@@ -19,14 +39,6 @@
     <link rel="apple-touch-icon" sizes="72x72"   href="img/favicon/apple-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png" />
-    
-    <meta property="og:url" content="www.consultoriacbc.com.br" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="<?php print $og_title; ?>" />
-    <meta property="og:description" content="Acreditamos que para planejar e pensar estrategicamente é necessário um trabalho que harmonize persistência, tempo para desenvolvimento do seu estilo estratégico e capacidade inspiradora. Se você está disposto a desafiar o seu modelo mental sabendo que rotas novas em mapas antigos pouco podem agregar o convidamos para fazer parte do nosso ciclo de clientes e parceiros." />
-    <meta property="og:image" content="http://www.consultoriacbc.com.br/img/facebook_cover.png" />
-    
-    <meta itemprop="image" content="http://www.consultoriacbc.com.br/img/facebook_cover.png" />
 
 </head>
 
