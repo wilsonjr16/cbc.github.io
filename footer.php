@@ -23,9 +23,12 @@
                 <span class="contato_email-link" itemprop="email">comercial@consultoriacbc.com.br</span>
             </li>
             <li class="contato_horario"><p class="contato_horario-txt">Segunda à sexta das 08:30h às 18:30h</p></li>
-            <li class="contato_local"><p class="contato_local-txt" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-              <span itemprop="streetAddress">Rua Vicente Linhares, 521, Sl 2105.</span>
-              <span itemprop="addressLocality">Fortaleza</span>/<span itemprop="addressRegion">CE</span></p></li>
+            <li class="contato_local">
+              <p class="contato_local-txt" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              Rua Vicente Linhares, 521, Sl 2105.
+              Fortaleza/CE
+              </p>
+            </li>
         </ul>
       </div>
 
