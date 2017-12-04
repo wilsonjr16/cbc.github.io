@@ -37,11 +37,19 @@
   </footer>
 
       <div class="clear"></div>
-
-      <script src="js/jquery.min.js" type="text/javascript"></script>
-      <script src="js/instafeed.min.js" type="text/javascript"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/main.js" type="text/javascript"></script>
+      
+      
 
   </body>
 </html>
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
+<link href="https://fonts.googleapis.com/css?family=Hind:300,400|Poppins" rel="stylesheet">
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/instafeed.min.js" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
