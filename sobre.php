@@ -11,7 +11,7 @@
 <div class="clear"></div>
 
 <section class="fleft_full">
-    <div class="center_element">
+    <div class="container">
         <div class="row">
         <div id="sobre" class="col-sm-6 padd-top">
             <div  class="section_institucional-txt">
@@ -40,7 +40,7 @@
 <div class="clear"></div>
 
 <section class="fleft_full">
-    <div class="center_element">
+    <div class="container">
         <h3 class="list_tit">Valores</h3>
         <div class="row">
         <ol class="list_val col-sm-6">
@@ -70,7 +70,7 @@
 <div class="clear"></div>
 
 <section class="fleft_full diferenciais">
-<div class="center_element">
+<div class="container">
     <h3 class="diferenciais_tit">Veja alguns de nossos diferenciais</h3>
     <ul class="dif_list cem">
         <li class="dif_list-item col-sm-3">

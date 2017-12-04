@@ -1,5 +1,5 @@
 <footer class="footer fleft_full">
-    <div class="center_element">
+    <div class="container">
     <div class="row">
       <div class="col-sm-4 footer_mapa">
         <h3 class="footer_mapa-tit">MAPA DO SITE</h3>

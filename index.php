@@ -9,7 +9,7 @@
     <div class="clear"></div>
 
     <section class="fleft_full section_nv2">
-      <div class="center_element cf">
+      <div class="container cf">
         <div class="col-md-10 col-md-offset-1 section_nv2-box">
           <div class="box_middle">
             <h2 class="section_nv2-tit">Transformando ideias em resultados</h2>
@@ -71,7 +71,7 @@
     <div class="clear"></div>
 
     <section class="fleft_full frase">
-      <div class="center_element cf">
+      <div class="container cf">
         <div class="col-md-10 col-md-offset-1">
           <p class="frase_txt">"Atualmente só existem dois tipos de empresas: As que inovam e crescem e aquelas que saem do mercado mesmo sem perceber. A excelência há muito tempo deixou de ser opção." Júnior Costa</p>
         </div>
@@ -81,7 +81,7 @@
     <div class="clear"></div>
 
     <section class="fleft_full section_nv3">
-    <div class="center_element cf">
+    <div class="container cf">
     <h3 class="section_nv3-tit">Conheça nossos serviços</h3>
       <ul class="servicos_list row">
         <li class="servicos_list-item col-sm-4">
@@ -111,7 +111,7 @@
     <div class="clear"></div>
 
     <section class="fleft_full section_nv4">
-        <div class="center_element">
+        <div class="container">
           <h3 class="insta_tit">Instagram @consultoriacbc</h3>
           <ul id="instafeed" class="row"></ul>
         </div>

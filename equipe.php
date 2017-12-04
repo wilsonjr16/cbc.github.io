@@ -9,7 +9,7 @@
 <div class="clear"></div>
 
 <section class="fleft_full">
-  <div class="center_element">
+  <div class="container">
       <h3 class="section_nv3-tit">Conheça nossa equipe</h3>
       <div class="row">
       <div class="col-sm-6 ">
@@ -39,7 +39,7 @@
 <div class="clear"></div>
 
 <section class="fleft_full section_nv4">
-<div class="center_element">
+<div class="container">
     <ul class="video_list cem"> 
         <li class="dep_text col-sm-4">
             <img src="img/equipe/camila.png" class="img-responsive center-block"/>

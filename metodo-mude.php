@@ -9,7 +9,7 @@
 <div class="clear"></div>
 
 <section class="fleft_full">
-  <div class="center_element">
+  <div class="container">
       <div class="row">
       <div class="col-sm-6 ">
           <h2 class="list_tit">Alavanque os resultados da sua empresa em 05 meses</h2>
@@ -35,7 +35,7 @@
 <div class="clear"></div>
 
 <section class="fleft_full">
-    <div class="center_element">
+    <div class="container">
     <div class="row">
 
     <div class="col-sm-6 col-xs-12">
@@ -71,7 +71,7 @@
 <div class="clear"></div>
 
 <section class="fleft_full section_nv3">
-<div class="center_element">
+<div class="container">
     <h3 class="section_nv3-tit">Veja alguns depoimentos de nossos clientes</h3>
     <ul class="video_list cem">
         <li class="video_list-item col-sm-4">
@@ -90,7 +90,7 @@
 </section>
 
 <section class="fleft_full section_nv4">
-<div class="center_element">
+<div class="container">
     <h3 class="section_nv4-tit">O que os nossos clientes dizem</h3>
     <ul class="video_list cem"> 
         <li class="dep_text col-sm-4">

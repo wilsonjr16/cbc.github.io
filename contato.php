@@ -9,7 +9,7 @@
 <div class="clear"></div>
 
 <section class="fleft_full section_contato">
-    <div class="center_element">
+    <div class="container">
     <div class="col-sm-6">
 
     <h3 class="page-contato_tit">Entre em contato conosco</h3>
@@ -49,13 +49,13 @@
             <img src="img/img-contato.png" alt="imagem-contato" class="img_contato img-responsive"/>
         </figure>
     </div>
-    </div><!-- center_element -->
+    </div><!-- container -->
 </section>    
 
 <div class="clear"></div>  
 
 <section class="fleft_full section_nv4">
-    <div class="center_element">
+    <div class="container">
       <h3 class="insta_tit">Instagram @consultoriacbc</h3>
       <ul id="instafeed" class="row"></ul>
     </div>

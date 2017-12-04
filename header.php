@@ -48,7 +48,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 	
 <header class="<?php print $classHeader;?> fleft_full">
-<div class="center_element">
+<div class="container">
   <nav class="header_nav flex_box">
     <h1 class="logo_cbc">
         <a href="index.php" class="logo_link" title="logo home"><img src="img/logo.png" class="img-responsive" /></a>

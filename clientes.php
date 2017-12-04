@@ -9,7 +9,7 @@
 <div class="clear"></div>
 
 <section class="section_clientes fleft_full">
-    <div class="center_element">
+    <div class="container">
         <h3 class="page_clientes-tit">Conheça nossos clientes</h3>
 
         <div class="proje_art">
@@ -76,7 +76,7 @@
 <div class="clear"></div>
 
 <section class="fleft_full section_nv4">
-    <div class="center_element">
+    <div class="container">
       <h3 class="insta_tit">Instagram @consultoriacbc</h3>
       <ul id="instafeed" class="row"></ul>
     </div>
