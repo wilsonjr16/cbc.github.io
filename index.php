@@ -85,21 +85,21 @@
     <h3 class="section_nv3-tit">Conheça nossos serviços</h3>
       <ul class="servicos_list row">
         <li class="servicos_list-item col-sm-4">
-          <a href="consultoria-estrategica.html" class="servicos_list-link">
+          <a href="consultoria-estrategica.php" class="servicos_list-link">
               <img class="img-responsive servicos_list-img" src="img/icon-1.png">
               <p class="servicos_list-txt">Consultoria Estratégica</p>
           </a>
         </li>
 
         <li class="servicos_list-item col-sm-4">
-          <a href="consultoria-financeira.html" class="servicos_list-link">
+          <a href="consultoria-financeira.php" class="servicos_list-link">
               <img class="img-responsive servicos_list-img" src="img/icon-2.png">
               <p class="servicos_list-txt">Consultoria Financeira</p>
           </a>
         </li>
 
         <li class="servicos_list-item col-sm-4">
-          <a href="metodo-mude.html" class="servicos_list-link">
+          <a href="metodo-mude.php" class="servicos_list-link">
               <img class="img-responsive servicos_list-img" src="img/icon-3.png">
               <p class="servicos_list-txt">Método Mude</p>
           </a>
